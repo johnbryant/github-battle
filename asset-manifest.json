@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github-battle/static/css/main.2cce8147.chunk.css",
+    "main.js": "/github-battle/static/js/main.751c9303.chunk.js",
+    "main.js.map": "/github-battle/static/js/main.751c9303.chunk.js.map",
+    "runtime~main.js": "/github-battle/static/js/runtime~main.6176a14e.js",
+    "runtime~main.js.map": "/github-battle/static/js/runtime~main.6176a14e.js.map",
+    "static/js/2.b41502e9.chunk.js": "/github-battle/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/github-battle/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/github-battle/index.html",
+    "precache-manifest.0437fdaa79faea2f2fb88390912a901b.js": "/github-battle/precache-manifest.0437fdaa79faea2f2fb88390912a901b.js",
+    "service-worker.js": "/github-battle/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/github-battle/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/github-battle/static/media/logo.5d5d9eef.svg"
+  }
+}
