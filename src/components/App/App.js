@@ -7,11 +7,12 @@ import Popular from "../Popular/Popular";
 import Search from "../Search/Search";
 import Nav from "./Nav";
 import NotFound from "./NotFound";
+import { baseUrl } from "../../util/constant";
 
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename={baseUrl}>
         <div className="container">
           <Nav />
           <Switch>

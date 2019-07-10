@@ -1,10 +1,10 @@
 import axios from "axios";
-import { baseUrl } from "./constant";
+import { baseApiUrl } from "./constant";
 
 const getUser = username => {
   return axios({
     method: "get",
-    url: `${baseUrl}/users/${username}`
+    url: `${baseApiUrl}/users/${username}`
   }).then(
     user => {
       // console.log(user.data);
@@ -19,14 +19,14 @@ const getUser = username => {
 const getUserRepos = username => {
   return axios({
     method: "get",
-    url: `${baseUrl}/users/${username}/repos`
+    url: `${baseApiUrl}/users/${username}/repos`
   }).then(
     res => {
       // console.log(res);
       return res.data;
     },
     err => {
-      console.err(err);
+      console.error(err);
     }
   );
 };
