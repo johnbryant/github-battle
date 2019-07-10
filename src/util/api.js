@@ -7,7 +7,7 @@ const getUser = username => {
     url: `${baseApiUrl}/users/${username}`
   }).then(
     user => {
-      // console.log(user.data);
+      console.log(user.data);
       return user.data;
     },
     err => {
@@ -19,7 +19,7 @@ const getUser = username => {
 const getUserRepos = username => {
   return axios({
     method: "get",
-    url: `${baseApiUrl}/users/${username}/repos`
+    url: `${baseApiUrl}/users/${username}/repos?order=asc&sort=updated`
   }).then(
     res => {
       // console.log(res);
