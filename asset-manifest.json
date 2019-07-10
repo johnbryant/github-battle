@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/github-battle/static/css/main.a8ac2821.chunk.css",
-    "main.js": "/github-battle/static/js/main.d3483be5.chunk.js",
-    "main.js.map": "/github-battle/static/js/main.d3483be5.chunk.js.map",
+    "main.js": "/github-battle/static/js/main.6b94ba06.chunk.js",
+    "main.js.map": "/github-battle/static/js/main.6b94ba06.chunk.js.map",
     "runtime~main.js": "/github-battle/static/js/runtime~main.6176a14e.js",
     "runtime~main.js.map": "/github-battle/static/js/runtime~main.6176a14e.js.map",
     "static/js/2.4c16d099.chunk.js": "/github-battle/static/js/2.4c16d099.chunk.js",
     "static/js/2.4c16d099.chunk.js.map": "/github-battle/static/js/2.4c16d099.chunk.js.map",
     "index.html": "/github-battle/index.html",
-    "precache-manifest.83947627d3dd1178db3da6a234760e5d.js": "/github-battle/precache-manifest.83947627d3dd1178db3da6a234760e5d.js",
+    "precache-manifest.09ba299e93ce686623ff479ea62c1dfd.js": "/github-battle/precache-manifest.09ba299e93ce686623ff479ea62c1dfd.js",
     "service-worker.js": "/github-battle/service-worker.js",
     "static/css/main.a8ac2821.chunk.css.map": "/github-battle/static/css/main.a8ac2821.chunk.css.map"
   }
