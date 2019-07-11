@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../../style/Search.css";
 import { getUser, getUserRepos } from "../../util/api";
 import ProfileInfo from "./ProfileInfo";
 import ProfileRepos from "./ProfileRepos";
+import Loading from "../Reusable/Loading";
 
 class Search extends React.Component {
   constructor(props) {
@@ -18,6 +18,13 @@ class Search extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    this.setState({
+      username: "",
+      userInfo: null,
+      userRepos: null,
+      loading: true
+    });
+
     // get user profile
     getUser(this.state.username).then(info => {
       this.setState({
@@ -26,10 +33,12 @@ class Search extends React.Component {
     });
     // get user repos
     getUserRepos(this.state.username).then(repos => {
-      console.log(repos);
       this.setState({
         userRepos: repos
       });
+    });
+    this.setState({
+      loading: false
     });
   };
 
@@ -40,7 +49,7 @@ class Search extends React.Component {
   };
 
   render() {
-    const { username, userInfo, userRepos } = this.state;
+    const { username, userInfo, userRepos, loading } = this.state;
     return (
       <div className="search">
         <form className="searchForm" onSubmit={this.handleSubmit}>
@@ -55,6 +64,7 @@ class Search extends React.Component {
           </button>
         </form>
         <div className="profile">
+          {loading ? <Loading /> : " "}
           {userInfo && <ProfileInfo profile={userInfo} />}
           {userRepos && <ProfileRepos repos={userRepos} />}
         </div>

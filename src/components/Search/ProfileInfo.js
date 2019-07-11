@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import moment from "moment";
 
 const ProfileInfo = ({ profile }) => {
@@ -13,7 +12,7 @@ const ProfileInfo = ({ profile }) => {
           alt={profile.login}
         />
         <br />
-        <a href={profile.html_url} target="_blank">
+        <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
           {profile.login}
         </a>
       </div>
@@ -28,7 +27,7 @@ const ProfileInfo = ({ profile }) => {
       </div>
       <div>
         <h4>
-          <a href={profile.blog} target="_blank">
+          <a href={profile.blog} target="_blank" rel="noopener noreferrer">
             {profile.blog}
           </a>
         </h4>
