@@ -1,0 +1,49 @@
+/* language selector */
+
+.popular-languages {
+  display: flex;
+  justify-content: center;
+}
+
+.popular-languages li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.selected-language {
+  color: #a0021c;
+}
+
+/* popular repos list */
+.popular-repos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* popular repo */
+.popular-repo {
+  margin: 20px;
+  text-align: center;
+}
+
+.popular-rank {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.popular-item-info {
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-item-info img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.popular-item-info p {
+  margin: 0 auto;
+}
