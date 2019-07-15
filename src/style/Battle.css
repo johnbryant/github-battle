@@ -1,0 +1,33 @@
+.battle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.battle-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.battle-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.battle-form label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.battle-reset {
+  border: none;
+  background: transparent;
+  color: #a0021c;
+  width: 100%;
+
+  margin-top: 0;
+}

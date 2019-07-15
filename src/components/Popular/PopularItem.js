@@ -5,7 +5,7 @@ const PopularItem = ({ repo, index }) => {
     <li className="popular-repo">
       <div className="popular-rank">#{index + 1}</div>
       <div className="popular-item-info">
-        <img src={repo.owner.avatar_url} />
+        <img src={repo.owner.avatar_url} alt={repo.owner.login} />
         <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
           {repo.name}
         </a>

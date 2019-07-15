@@ -22,3 +22,45 @@ a {
   transition: 1.25 all ease-in;
   color: #a0021c;
 }
+
+button {
+  color: #e6e6e6;
+  background-color: #0a0a0a;
+  border-radius: 3px;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  padding: 7px 0;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.profile-avatar {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.button {
+  color: #e6e6e6;
+  background-color: #0a0a0a;
+  border-radius: 3px;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  padding: 7px 0;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.small-button {
+  width: 100px;
+}
