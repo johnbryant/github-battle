@@ -6,15 +6,12 @@ export const getUser = username => {
   return axios({
     method: "get",
     url: `${baseApiUrl}/users/${username}`
-  }).then(
-    user => {
+  })
+    .then(user => {
       // console.log(user.data);
       return user.data;
-    },
-    err => {
-      console.error(err);
-    }
-  );
+    })
+    .catch(handleError);
 };
 
 // get single user's public repos
@@ -22,15 +19,12 @@ export const getUserRepos = username => {
   return axios({
     method: "get",
     url: `${baseApiUrl}/users/${username}/repos?order=asc&sort=updated`
-  }).then(
-    res => {
+  })
+    .then(res => {
       // console.log(res);
       return res.data;
-    },
-    err => {
-      console.error(err);
-    }
-  );
+    })
+    .catch(handleError);
 };
 
 // get popular repositories
@@ -39,13 +33,12 @@ export const getPopularRepos = language => {
   return axios({
     method: "get",
     url: url
-  }).then(
-    res => {
+  })
+    .then(res => {
       // console.log(res);
       return res.data.items;
-    },
-    err => console.error(err)
-  );
+    })
+    .catch(handleError());
 };
 
 const handleError = err => {

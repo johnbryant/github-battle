@@ -18,6 +18,7 @@ class Search extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    const { username } = this.state;
     this.setState({
       username: "",
       userInfo: null,
@@ -26,13 +27,18 @@ class Search extends React.Component {
     });
 
     // get user profile
-    getUser(this.state.username).then(info => {
-      this.setState({
-        userInfo: info
-      });
+    getUser(username).then(info => {
+      if (info) {
+        this.setState({
+          userInfo: info
+        });
+      } else {
+        alert(`${username} doesn't exist!`);
+        this.textInput.value = "";
+      }
     });
     // get user repos
-    getUserRepos(this.state.username).then(repos => {
+    getUserRepos(username).then(repos => {
       this.setState({
         userRepos: repos
       });
@@ -55,6 +61,7 @@ class Search extends React.Component {
         <form className="searchForm" onSubmit={this.handleSubmit}>
           <label className="searchLabel">Enter a github username</label>
           <input
+            ref={node => (this.textInput = node)}
             type="text"
             placeholder="github username"
             onChange={this.handleChange}
