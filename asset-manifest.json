@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/github-battle/static/css/main.2651c770.chunk.css",
-    "main.js": "/github-battle/static/js/main.90862f2f.chunk.js",
-    "main.js.map": "/github-battle/static/js/main.90862f2f.chunk.js.map",
+    "main.css": "/github-battle/static/css/main.7ddf6d3b.chunk.css",
+    "main.js": "/github-battle/static/js/main.701dabf1.chunk.js",
+    "main.js.map": "/github-battle/static/js/main.701dabf1.chunk.js.map",
     "runtime~main.js": "/github-battle/static/js/runtime~main.6176a14e.js",
     "runtime~main.js.map": "/github-battle/static/js/runtime~main.6176a14e.js.map",
-    "static/js/2.c1ad1ea7.chunk.js": "/github-battle/static/js/2.c1ad1ea7.chunk.js",
-    "static/js/2.c1ad1ea7.chunk.js.map": "/github-battle/static/js/2.c1ad1ea7.chunk.js.map",
+    "static/js/2.5c204f15.chunk.js": "/github-battle/static/js/2.5c204f15.chunk.js",
+    "static/js/2.5c204f15.chunk.js.map": "/github-battle/static/js/2.5c204f15.chunk.js.map",
     "index.html": "/github-battle/index.html",
-    "precache-manifest.10d7a9a33d27103e059486919d294149.js": "/github-battle/precache-manifest.10d7a9a33d27103e059486919d294149.js",
+    "precache-manifest.788aef5dcd0bdbf35fbc25c2295498d1.js": "/github-battle/precache-manifest.788aef5dcd0bdbf35fbc25c2295498d1.js",
     "service-worker.js": "/github-battle/service-worker.js",
-    "static/css/main.2651c770.chunk.css.map": "/github-battle/static/css/main.2651c770.chunk.css.map"
+    "static/css/main.7ddf6d3b.chunk.css.map": "/github-battle/static/css/main.7ddf6d3b.chunk.css.map"
   }
 }
