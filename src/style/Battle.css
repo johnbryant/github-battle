@@ -10,6 +10,12 @@
   justify-content: space-around;
 }
 
+.battle-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .battle-form {
   display: flex;
   flex-direction: column;

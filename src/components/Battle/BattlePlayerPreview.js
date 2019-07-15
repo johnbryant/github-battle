@@ -7,9 +7,11 @@ const BattlePlayerPreview = ({ avatar, username, onReset }) => {
         <img className="profile-avatar" src={avatar} />
         <h2 className="username">@{username}</h2>
       </div>
-      <button className="battle-reset" onClick={onReset}>
-        Reset
-      </button>
+      {onReset && (
+        <button className="battle-reset" onClick={onReset}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };
